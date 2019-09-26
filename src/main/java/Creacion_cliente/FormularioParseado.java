@@ -16,12 +16,9 @@ public class FormularioParseado {
            {
                String Url = htmlparseado.absUrl("action");
                Peticion= Jsoup.connect(Url).data("Asignatura: ", "Practica1").header("Matricula", "20161615").post();
-               System.out.println(Peticion.body().toString());
+               System.out.println("\n Resp. (F): "+Peticion.body().toString());
            }
 
         }
     }
-
-
-
 }
